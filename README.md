@@ -1,5 +1,7 @@
 Explicación:
+
 ChessGame
+
 Es la clase central del juego de ajedrez que maneja la lógica general del juego, como el turno de cada jugador y la verificación de condiciones de victoria o jaque mate. Coordina las interacciones entre las diferentes piezas y el tablero.
 Board
 Representa el tablero de ajedrez, incluyendo la configuración inicial y la posición actual de las piezas. Su responsabilidad es mostrar las piezas en las posiciones correctas y permitir la actualización de estas posiciones a medida que avanza el juego.
