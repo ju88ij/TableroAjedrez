@@ -1,0 +1,17 @@
+.root{
+	-fx-focus-color:#B8860B;
+	-fx-faint-focus-color:#B8860B22;
+	-fx-background-image: url('/resources/images/rightBg.png');
+}
+
+.button{
+	-fx-effect: dropshadow(gaussian, rgba(0.043, 0.035, 0.035), 5.0, 0.2, 1, 1);
+}
+
+.button:pressed{
+	-fx-effect: null;
+}
+
+.choice-box .menu-item:focused {
+	-fx-background-color: darkgoldenrod;
+}

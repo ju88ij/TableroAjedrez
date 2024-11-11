@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import java.net.*?>
+
+<VBox fx:id="root" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="chessApplication.endedbyuser.EndedByUserController">
+	<HBox alignment="CENTER">
+		<VBox.margin>
+			<Insets top="30.0" right="25.0" bottom="10.0" left="25.0" />
+		</VBox.margin>
+		<Text fx:id="message" styleClass="message"></Text>
+	</HBox>
+	<Region VBox.vgrow="ALWAYS"></Region>
+	<BorderPane>
+		<VBox.margin>
+			<Insets top="0.0" right="25.0" bottom="10.0" left="25.0" />
+		</VBox.margin>
+		<left>
+			<Button text="Cancel" fx:id="cancelButton"
+				onAction="#cancelButtonAction"></Button>
+		</left>
+		<right>
+			<Button text="Accept" fx:id="acceptButton"
+				onAction="#acceptButtonAction"></Button>
+		</right>
+	</BorderPane>
+	<stylesheets>
+		<URL value="@EndedByUser.css" />
+	</stylesheets>
+</VBox>
+
