@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="root" styleClass="root" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22" fx:controller="chessApplication.Controller">
+	<top>
+		<HBox fx:id="top" styleClass="top">
+		<BorderPane.margin>
+		<Insets bottom="2.0" left="30.0" right="340.0" top="2.0" /> 
+		</BorderPane.margin>
+				<Label text="a" />
+				<Label text="b" />
+				<Label text="c" />
+				<Label text="d" />
+				<Label text="e" />
+				<Label text="f" />
+				<Label text="g" />
+				<Label text="h" />
+		</HBox>
+	</top>
+	<left>
+		<VBox fx:id="left" styleClass="left">
+		<BorderPane.margin>
+		<Insets bottom="15.0" left="10.0" right="10.0" top="0.0" />
+		</BorderPane.margin>
+				<Label text="1" />
+				<Label text="2" />
+				<Label text="3" />
+				<Label text="4" />
+				<Label text="5" />
+				<Label text="6" />
+				<Label text="7" />
+				<Label text="8" />
+		</VBox>
+	</left>
+
+	<!-- <center> <ScrollPane> <BorderPane.margin> <Insets bottom="25.0" left="25.0" 
+		right="25.0" top="25.0" /> </BorderPane.margin> -->
+
+	<center>
+		<GridPane fx:id="board" minHeight="450.0" minWidth="450.0" prefHeight="450.0" prefWidth="450.0" styleClass="board">
+			<BorderPane.margin>
+				<Insets bottom="15.0" left="0.0" right="10.0" top="0.0" />
+			</BorderPane.margin>
+			<!-- row 1 index 0 -->
+			<Label styleClass="topLeftCorner" text="" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+			<Label styleClass="top-black" text="" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+			<Label styleClass="top-white" text="" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+			<Label styleClass="top-black" text="" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+			<Label styleClass="top-white" text="" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+			<Label styleClass="top-black" text="" GridPane.columnIndex="5" GridPane.rowIndex="0" />
+			<Label styleClass="top-white" text="" GridPane.columnIndex="6" GridPane.rowIndex="0" />
+			<Label styleClass="topRightCorner" text="" GridPane.columnIndex="7" GridPane.rowIndex="0" />
+			<!-- row 2 index 1 -->
+			<Label styleClass="left-black" text="" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+			<Label styleClass="white" text="" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+			<Label styleClass="black" text="" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+			<Label styleClass="white" text="" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+			<Label styleClass="black" text="" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+			<Label styleClass="white" text="" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+			<Label styleClass="black" text="" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+			<Label styleClass="right-white" text="" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+			<!-- row 3 index 2 -->
+			<Label styleClass="left-white" text="" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+			<Label styleClass="black" text="" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+			<Label styleClass="white" text="" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+			<Label styleClass="black" text="" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+			<Label styleClass="white" text="" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+			<Label styleClass="black" text="" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+			<Label styleClass="white" text="" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+			<Label styleClass="right-black" text="" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+			<!-- row 4 index 3 -->
+			<Label styleClass="left-black" text="" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+			<Label styleClass="white" text="" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+			<Label styleClass="black" text="" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+			<Label styleClass="white" text="" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+			<Label styleClass="black" text="" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+			<Label styleClass="white" text="" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+			<Label styleClass="black" text="" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+			<Label styleClass="right-white" text="" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+			<!-- row 5 index 4 -->
+			<Label styleClass="left-white" text="" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+			<Label styleClass="black" text="" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+			<Label styleClass="white" text="" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+			<Label styleClass="black" text="" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+			<Label styleClass="white" text="" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+			<Label styleClass="black" text="" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+			<Label styleClass="white" text="" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+			<Label styleClass="right-black" text="" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+			<!-- row 6 index 5 -->
+			<Label styleClass="left-black" text="" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+			<Label styleClass="white" text="" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+			<Label styleClass="black" text="" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+			<Label styleClass="white" text="" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+			<Label styleClass="black" text="" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+			<Label styleClass="white" text="" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+			<Label styleClass="black" text="" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+			<Label styleClass="right-white" text="" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+			<!-- row 7 index 6 -->
+			<Label styleClass="left-white" text="" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+			<Label styleClass="black" text="" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+			<Label styleClass="white" text="" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+			<Label styleClass="black" text="" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+			<Label styleClass="white" text="" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+			<Label styleClass="black" text="" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+			<Label styleClass="white" text="" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+			<Label styleClass="right-black" text="" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+			<!-- row 8 index 7 -->
+			<Label styleClass="bottomLeftCorner" text="" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+			<Label styleClass="bottom-white" text="" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+			<Label styleClass="bottom-black" text="" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+			<Label styleClass="bottom-white" text="" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+			<Label styleClass="bottom-black" text="" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+			<Label styleClass="bottom-white" text="" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+			<Label styleClass="bottom-black" text="" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+			<Label styleClass="bottomRightCorner" text="" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+	</GridPane>
+	</center>
+	<right>
+		<VBox fx:id="right" maxWidth="318.0" minWidth="318.0" prefWidth="318.0" styleClass="right">
+		<BorderPane.margin>
+		<Insets bottom="15.0" left="0.0" right="10.0" top="0.0" />
+		</BorderPane.margin>
+			<HBox fx:id="player1Labels" alignment="CENTER" spacing="1.0" styleClass="players" visible="false">
+			<VBox.margin>
+			<Insets bottom="5.0" left="10.0" right="10.0" top="0.0" />
+			</VBox.margin>
+				<Label fx:id="player1Symbol" styleClass="symbol" text="♙" />
+				<Label fx:id="player1" text="Player 1" />
+				<Region HBox.hgrow="ALWAYS" />
+				<HBox fx:id="timer1" visible="false">
+				<Label fx:id="hours1"> </Label>
+				<Label text=":"> </Label>
+				<Label fx:id="minutes1"> </Label>
+				<Label text=":"> </Label>
+				<Label fx:id="seconds1"> </Label>
+				</HBox>
+			</HBox>
+			<HBox fx:id="player2Labels" alignment="CENTER" spacing="2.0" styleClass="players" visible="false">
+			<VBox.margin>
+			<Insets bottom="5.0" left="10.0" right="10.0" top="0.0" />
+			</VBox.margin>
+				<Label fx:id="player2Symbol" styleClass="symbol" text="♟" />
+				<Label fx:id="player2" text="Player 2" />
+				<Region HBox.hgrow="ALWAYS" />
+				<HBox fx:id="timer2" visible="false">
+				<Label fx:id="hours2"> </Label>
+				<Label text=":"> </Label>
+				<Label fx:id="minutes2"> </Label>
+				<Label text=":"> </Label>
+				<Label fx:id="seconds2"> </Label>
+				</HBox>
+			</HBox> 
+			<HBox alignment="CENTER" visible="true">
+			<VBox.margin>
+			<Insets bottom="5.0" left="10.0" right="10.0" top="0.0" />
+			</VBox.margin>
+				<Label fx:id="validationMessages" styleClass="messages-welcome" text="the art of check" />
+			</HBox>
+			<HBox alignment="CENTER" visible="true">
+			<VBox.margin>
+			<Insets bottom="5.0" left="10.0" right="10.0" top="0.0" />
+			</VBox.margin>
+				 <Text fx:id="evaluationMessages" styleClass="messages-evaluation" />
+			</HBox>
+			<Region VBox.vgrow="ALWAYS" />
+			<TilePane fx:id="captured" alignment="BOTTOM_LEFT" visible="false">
+				<!-- labels for captured Pieces: max number od captures is 30; Labels 1-10 -->
+				<Label styleClass="captures" />
+				<Label styleClass="captures" />
+				<Label styleClass="captures" />
+				<Label styleClass="captures" />
+				<Label styleClass="captures" />
+				<Label styleClass="captures" />
+				<Label styleClass="captures" />
+				<Label styleClass="captures" />
+				<Label styleClass="captures" />
+				<Label styleClass="captures" />
+				<!-- labels 11-20 -->
+				<Label styleClass="captures" />
+				<Label styleClass="captures" />
+				<Label styleClass="captures" />
+				<Label styleClass="captures" />
+				<Label styleClass="captures" />
+				<Label styleClass="captures" />
+				<Label styleClass="captures" />
+				<Label styleClass="captures" />
+				<Label styleClass="captures" />
+				<Label styleClass="captures" />
+				<!-- labels 21-30 -->
+				<Label styleClass="captures" />
+				<Label styleClass="captures" />
+				<Label styleClass="captures" />
+				<Label styleClass="captures" />
+				<Label styleClass="captures" />
+				<Label styleClass="captures" />
+				<Label styleClass="captures" />
+				<Label styleClass="captures" />
+				<Label styleClass="captures" />
+				<Label styleClass="captures" />
+			</TilePane>
+			<HBox alignment="CENTER" spacing="10.0">
+			<VBox.margin>
+			<Insets bottom="0" left="40" right="40" top="10" />
+			</VBox.margin>
+				<Button fx:id="start" onAction="#startButtonAction" prefWidth="77.0" text="Start" />
+				<Button fx:id="resign" disable="true" onAction="#resignButtonAction" prefWidth="77.0" text="Resign" />
+			</HBox>
+			<HBox alignment="CENTER" spacing="10.0">
+			<VBox.margin>
+			<Insets bottom="10" left="40" right="40" top="10" />
+			</VBox.margin>
+				<Button fx:id="offerDraw" disable="true" onAction="#offerDrawButtonAction" prefWidth="77.0" style=".button2" text="Offer Draw" />
+				<Button fx:id="claimDraw" disable="true" onAction="#claimDrawButtonAction" prefWidth="77.0" text="Claim Draw" />
+			</HBox>		
+			</VBox>
+	</right>
+	<stylesheets>
+		<URL value="@Layout.css" />
+	</stylesheets>
+</BorderPane>
