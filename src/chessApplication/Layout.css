@@ -1,0 +1,190 @@
+
+#root{
+	-fx-background-color: darkgray;
+	-fx-focus-color:#B8860B;
+	-fx-faint-focus-color:#B8860B22;
+}
+
+#windows7-default {
+    -fx-background-color: #3c7fb1,
+        linear-gradient(#fafdfe, #e8f5fc),
+        linear-gradient(#eaf6fd 0%, #d9f0fc 49%, #bee6fd 50%, #a7d9f5 100%);
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+}
+
+.messages-welcome{
+	-fx-text-fill: DARKGOLDENROD;
+	-fx-font-family: "Adobe Arabic";
+	-fx-font-size: 30.0;
+	-fx-font-weight: BOLD;
+}
+.messages-normal{
+	-fx-text-fill: black;
+	-fx-font-family: "Adobe Arabic";
+	-fx-font-size: 16.0;
+	-fx-font-weight: normal;
+}
+
+.messages-evaluation{
+	-fx-fill: BLACK;
+	-fx-font-family: "Adobe Arabic";
+	-fx-font-size: 20.0;
+	-fx-text-alignment:  center ;
+	
+}
+#board{
+	-fx-font-family: "Hayashi-Serif";
+	-fx-font-size: 42.0;
+	-fx-alignment: top-left;
+}
+
+#top{
+	-fx-font-family: "Adobe Arabic";
+	-fx-font-size: 16.0;
+	-fx-pref-columns: 10.0;
+	}
+
+
+#left{
+	-fx-font-family: "Adobe Arabic";
+	-fx-font-size: 16.0;
+}
+
+#captured{
+	-fx-border-color: darkgoldenrod;
+	-fx-border-width: 1.0 1.0 1.0 1.0 ;
+}
+.captures{
+	-fx-font-family: "Hayashi-Serif";
+	-fx-font-size: 30.0;
+	}
+
+.players {
+	-fx-alignment: bottom-left ;
+	-fx-font-family: "Adobe Arabic";
+	-fx-font-size: 25;
+}
+	
+.active{
+	-fx-alignment: bottom-left ;
+	-fx-font-family: "Adobe Arabic";
+	-fx-font-size: 25;
+	-fx-text-fill: azure ;
+}
+
+.label{
+		-fx-alignment: center;
+}
+
+.symbol{
+	-fx-font-family: "Hayashi-Serif";
+	-fx-alignment: top-left;
+	-fx-font-size: 20;
+}
+
+#right{
+	
+	-fx-border-color:     darkgoldenrod;
+	-fx-border-width: 	  1.5 1.5 1.5 1.5;
+	-fx-padding: 5.0 5.0 5.0 5.0; 
+	-fx-background-image: url('/resources/images/rightBg.png');
+	}
+.button{
+	-fx-effect: dropshadow(gaussian, rgba(0.043, 0.035, 0.035), 5.0, 0.2, 1, 1);
+}
+
+.button2{
+	
+}
+
+.button:pressed{
+	-fx-effect: null;
+}
+
+
+.buttonContainer{
+	
+}
+
+.black{
+	-fx-background-color: burlywood;
+}
+
+.white{
+	-fx-background-color: antiquewhite   ;
+}
+.top-black{
+	-fx-background-color: burlywood  ;
+	-fx-border-color:     darkgoldenrod;
+	-fx-border-width: 	  1.5 0 0 0; 	
+}
+
+.top-white{
+	-fx-background-color: antiquewhite;
+	-fx-border-color:     darkgoldenrod;
+	-fx-border-width:     1.5 0 0 0; 	
+}
+
+.left-black{
+	-fx-background-color: burlywood;
+	-fx-border-color:     darkgoldenrod;
+	-fx-border-width:     0 0 0 1.5; 		
+}
+
+.left-white{
+	-fx-background-color: antiquewhite;
+	-fx-border-color:     darkgoldenrod;
+	-fx-border-width:     0 0 0 1.5;
+}
+
+.right-black{
+	-fx-background-color: burlywood;	
+	-fx-border-color:     darkgoldenrod;
+	-fx-border-width:     0 1.5 0 0;
+}
+
+.right-white{
+	-fx-background-color: antiquewhite;
+	-fx-border-color:     darkgoldenrod;
+	-fx-border-width:     0 1.5 0 0;
+}
+
+.bottom-black{
+	-fx-background-color: burlywood;
+	-fx-border-color:     darkgoldenrod;
+	-fx-border-width:     0 0 1.5 0;	
+}
+
+.bottom-white{
+	-fx-background-color: antiquewhite;
+	-fx-border-color:     darkgoldenrod;
+	-fx-border-width:     0 0 1.5 0;	
+}
+
+.topLeftCorner{
+	-fx-background-color: antiquewhite;
+	-fx-border-color:     darkgoldenrod;
+	-fx-border-width:    1.5 0 0 1.5;	
+}
+
+.topRightCorner{
+	-fx-background-color: burlywood;	
+	-fx-border-color:     darkgoldenrod;
+	-fx-border-width:     1.5 1.5 0 0;	
+}
+
+.bottomRightCorner{
+	-fx-background-color: antiquewhite;
+	-fx-border-color:     darkgoldenrod;
+	-fx-border-width:     0 1.5 1.5 0;	
+}
+
+.bottomLeftCorner{
+	-fx-background-color: burlywood;
+	-fx-border-color:     darkgoldenrod;
+	-fx-border-width:     0 0 1.5 1.5;		
+}
